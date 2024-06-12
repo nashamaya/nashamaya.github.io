@@ -19,33 +19,39 @@
     <nav>
         <ul id="topbutton">
             <li><a class="topbutton" href="#biography">Biography</a></li>
-            <li><a class="topbutton" href="#workexperience">Experience</a></li>
-            <li><a class="topbutton" href="#education">Education</a></li>
-            <li><a class="topbutton" href="#contact">contact</a></li>
+            <li><a class="topbutton" href="#biography">Career Hightlights</a></li>
+            <li><a class="topbutton" href="#codingfun">Coding Fun</a></li>
+            <li><a class="topbutton" href="#contact">Contact</a></li>
         </ul>
-        <div id="weatherData"></div>
-        <div id="clock"></div>
     </nav>
 
     <section class="sectionone">
         <div class="status">
-            <h3 style="color: rgb(55, 135, 249);"> Software Development Student</h3>
+            <h3 style="color: rgb(18, 135, 177);"> Software Development Student</h3>
             <h1>Hello, I'm <span style="color: rgb(255, 111, 0);">nicha</span></h1>
         </div>
         <div class="profileimage">
             <img id="profileimage" src="nicha_profile_04.jpg" alt="nichakumkeaw" width="300">
         </div>
         <div class="description">
-            <h4>I'm learning HTML, CSS, JavaScript, Back-end and Front-end development. I am interested in CyberSecurity
-                and Mobile App industry.</h4>
-            <a href="NichaCV2024.pdf" style="text-decoration: none;" id="resume" target="_blank">Resume</a>
+            <h4>As a compositor, I aim to apply the knowledge gained from the Software Development Bootcamp to advance
+                into a Nuke TD role within the VFX industry.</h4>
+            <span style="font-size: smaller;">This entire page has been created using HTML, CSS, and JavaScript.</span>
+            <a href="NichaCV2024.pdf" style="text-decoration: none;" class="worklink" id="resume"
+                target="_blank">Resume</a>
+            <a href=" https://vimeo.com/288411128" style="text-decoration: none;" class="worklink" id="demoreel"
+                target="_blank">Demoreel</a>
         </div>
     </section>
 
 
     <section class="sectiontwo">
         <div class="softwaredev" id="softwaredev">
-            <h2 style="color: rgb(45, 60, 105); font-family: Raleway;">Software Development Training</h2>
+            <div id="trainingheader" style="color: rgb(45, 60, 105); font-family: Raleway;">
+                <h2>Software Development Bootcamp</h2>
+                <h4>University of British Columbia: Extended Learning</h4>
+                <h5>Vancouver</h5>
+            </div>
             <ul>
                 <li>HTML and CSS</li>
                 <li>Javascript</li>
@@ -57,20 +63,20 @@
                 <li>Mobile Development</li>
             </ul>
         </div>
- 
-
 
         <div>
             <img id="programmingtools" src="programmingtools.jpg" alt="tools" width="250">
         </div>
 
         <div class="biography" id="biography">
-            <h2 style="color: rgb(29, 84, 66); font-family: Raleway;">Biography</h2>
-            <p>My name is Nicha Kumkeaw. I have been a software user for all my life and it is time to learn software
-                development with a hope that this will lead to some new, exciting, and challenging opportunities in the
+            <h2 style="color: rgb(41, 122, 184); font-family: Raleway;">Biography</h2>
+            <p>My name is <strong style="color: rgb(30, 25, 25);">Nicha Kumkeaw</strong>. I have been a software user
+                all my life, and now I'm eager to challeng myself by delving into the world of software
+                development, with the hope that this journey will open up new, exciting, and challenging opportunities
+                for me in the
                 future.</p>
-            <p>Fun facts about me, please guess the answers below!</p>
             <div>
+                <p><strong>Fun facts about me, please guess the answers below!</strong></p>
                 <p>I have 3 nationalites, what are the countries?</p>
                 <form id="quizForm">
                     <label for="answer">Your Answer:</label>
@@ -87,102 +93,69 @@
                 </p>
                 <p id="celebration">🎉 Congratulations! You got it right! 🎉</p>
             </div>
-        </div>
-
-        <div class="workexperience" id="workexperience">
-            <h2 style="color: rgb(29, 84, 66); font-family: Raleway;">Work Experience</h2>
-            <table>
-                <tr>
-                    <th>Year</th>
-                    <th>Job Title</th>
-                    <th>Company</th>
-                    <th>Location</th>
-                    <th>Movies</th>
-                </tr>
-                <tr>
-                    <td class="workyear">2011-2024</td>
-                    <td>Visual Effects Artist</td>
-                    <td>Digital Domain</td>
-                    <td>Vancouver, Canada</td>
-                    <td>Avengers, Beauty and the Beast, Fast and Furious, Spider-man, Thor, Black Panther</td>
-                </tr>
-                <tr>
-                    <td class="workyear">2014-2015</td>
-                    <td>Visual Effects Mentor</td>
-                    <td>Facet School</td>
-                    <td>Pachuca, Mexico</td>
-                    <td>Power Rangers, Dumbo, Aquaman </td>
-                </tr>
-                <tr>
-                    <td class="workyear">2004-2014</td>
-                    <td>Visual Effects Artist</td>
-                    <td>Framestore</td>
-                    <td>London, England</td>
-                    <td>Harry Potter, James Bond, Narnia, Avatar </td>
-                </tr>
-            </table>
-            <br>
-            <a id="demoreelbutton" href=" https://vimeo.com/288411128"
-                style="text-decoration: none; font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(246, 246, 246);">Demoreel</a>
-        </div>
-
-        <div class="js">
-            <h2 style="color: rgb(235, 83, 56); font-family: Raleway;">Have fun with JavaScript</h2>
-            <h4 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Pick your lucky number</h4>
-            <div id="luckynumber">
-                <button id="buttontwo" type="button">Lucky Number</button>
-                <div id="divone"></div>
+            <div>
+                <p><strong>I have been working as a compositor for over 10 years. Here are some of my highlighs and fun facts.</strong>
+                </p>
+                <div id="careerhighlights">
+                    <button id="careerbutton" type="button">Career hightlights</button>
+                    <div id="careerdiv"></div>
+                </div>
             </div>
         </div>
 
+        <div class="codingfun" id="codingfun">
+            <h3
+                style="text-align: center; color: rgb(47, 40, 39); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                I've worked in both Vancouver and London, wondering which city rains more!?</h3>
 
-        <div class="education" id="education">
-            <h2 style="color: rgb(78, 56, 88); font-family: Raleway;">Education</h2>
-            <table>
-                <tr>
-                    <th>Year</th>
-                    <th>Program</th>
-                    <th>University</th>
-                    <th>Location</th>
-                </tr>
-                <tr>
-                    <td class="workyear">2024</td>
-                    <td>Software Development Bootcamp</td>
-                    <td>UBC Extended Learning, Circuit Stream</td>
-                    <td>Canada</td>
-                </tr>
-                <tr>
-                    <td class="workyear">2018</td>
-                    <td>MSc Forensic Psychology</td>
-                    <td>University of Liverpool</td>
-                    <td>England</td>
-                </tr>
-                <tr>
-                    <td class="workyear">2003</td>
-                    <td>BA Animation</td>
-                    <td>The Surrey Institute of Arts and Design</td>
-                    <td>England</td>
-                </tr>
-            </table>
+            <div class="weathercontainer" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                <div class="weatherbox">
+                    <h2 id="weathercity"></h2>
+                    <p id="localtime"></p>
+                    <p id="weathercondition"></p>
+                    <p id="weathertemp"></p>
+                    <p id="weathericon"></p>
+                </div>
+                <div class="weatherbox">
+                    <h2 id="weatherlondon"></h2>
+                    <p id="londonlocaltime"></p>
+                    <p id="weatherlondoncondition"></p>
+                    <p id="weatherlondontemp"></p>
+                    <p id="weatherlondonicon"></p>
+                </div>
+            </div>
         </div>
+        <div class="game">
+            <h2>Rock, Paper, Scissors Game</h2>
+            <p>Please choose an option below</p>
+            <button id="start-button">Start</button>
+            <div id="countdown"></div>
+            <button onclick="playgame('✊')">Rock✊</button>
+            <button onclick="playgame('📄')">Paper📄</button>
+            <button onclick="playgame('✂️')">Scissors✂️</button>
+            <div id="result" style="font-size: large;"></div>
+        </div>
+
         <div class="contact" id="contact">
-            <h2 style="color: rgb(172, 90, 115); font-family: Raleway;">Contact Me</h2>
-            <p><h3>Name: Nicha Kumkeaw</h3></p>
-            <p><h3>Email: nashamaya@gmail.com</h3></p>
-            <p><h3>Phone: 604-356-7556</h3></p>
-        </div>
-        
+            <h2 style="color: rgb(121, 88, 163); font-family: Raleway;">Contact: Nicha Kumkeaw: nashamaya@gmail.com</h2>
+           <p>&copy; 2024 Nicha Kumkeaw. All rights reserved.</p>
+        <a href="#topbutton"
+    style="text-decoration: none; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1em;">Back
+to top</a>
+</div>
+
     </section>
 
+
+
+
     <div>
-        <a href="#topbutton"
-            style="text-decoration: none; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 0.75em;">Back
-            to top</a>
+        
     </div>
 
     <footer>
         <div>
-            <p>&copy; 2024 Nicha Kumkeaw. All rights reserved.</p>
+            
         </div>
     </footer>
 
