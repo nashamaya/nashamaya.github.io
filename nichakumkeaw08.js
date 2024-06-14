@@ -154,10 +154,6 @@ function startCountdown() {
     let startButton = document.getElementById('start-button');
     let countdown = 3;
     userHasChosen = false;
-
-    // startButton.style.display = 'none';
-    // gameElement.style.display = 'none';
-    // countdownElement.style.display = 'block';
     countdownElement.innerText = countdown;
 
     let countdownInterval = setInterval(() => {
@@ -167,12 +163,7 @@ function startCountdown() {
         } else if (countdown === 0) {
             countdownElement.innerText = 'Start!';
             countdown--;
-        // } else {
-        //     clearInterval(countdownInterval);
-        //     countdownElement.style.display = 'none';
-        //     gameElement.style.display = 'block';
-
-            // If the user hasn't chosen by the end of the countdown, the computer wins
+        
             setTimeout(() => {
                 if (!userHasChosen) {
                     play(null);
@@ -208,9 +199,11 @@ function playgame(userChoice) {
 function determineWinner(userChoice, computerChoice) {
 
 if (userChoice === computerChoice) {
-document.getElementById('result').innerText = `
-YOU = ${userChoice}   COMPUTER = ${computerChoice}.
-It\'s a tie!`
+document.getElementById('result').innerHTML = `
+<p>YOU chose  ${userChoice}</p>   
+<p>COMPUTER  ${computerChoice}</p>
+<p>It's a tie!</p>
+`
 return
 } 
  else if (
@@ -218,13 +211,17 @@ return
 (userChoice === '📄' && computerChoice === 'rock') ||
 (userChoice === '✂️' && computerChoice === 'paper')
 ) {
-document.getElementById('result').innerText = `
-YOU = ${userChoice}   COMPUTER = ${computerChoice}.
-You win!`
+document.getElementById('result').innerHTML = `
+<p>YOU chose ${userChoice}</p>   
+<p>COMPUTER ${computerChoice}</p>
+<p>You win!</p>
+`
 } else {
-document.getElementById('result').innerText = `
-YOU = ${userChoice}   COMPUTER = ${computerChoice}.
-Computer wins!`
+document.getElementById('result').innerHTML = `
+<p>YOU chose ${userChoice}</p>   
+<p>COMPUTER ${computerChoice}</p>
+<p>Computer wins</p>
+`
 }  
 }
 

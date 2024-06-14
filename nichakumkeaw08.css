@@ -311,18 +311,6 @@ border-radius: 8px;
 
 
 
-.contact {
-    border: 5px solid rgb(238, 154, 115);
-    border-radius: 10px;
-    position: relative;
-    top: -300px;
-    
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-}
-
-
-
 @media screen and (max-width: 600px) {
 
     /* #topbutton {
