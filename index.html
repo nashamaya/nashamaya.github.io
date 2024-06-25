@@ -19,7 +19,7 @@
     <nav>
         <ul id="topbutton">
             <li><a class="topbutton" href="#biography">Biography</a></li>
-            <li><a class="topbutton" href="#biography">Career Hightlights</a></li>
+            <li><a class="topbutton" href="#workexperience">Work Experience</a></li>
             <li><a class="topbutton" href="#codingfun">Coding Fun</a></li>
         </ul>
     </nav>
@@ -35,10 +35,11 @@
         <div class="description">
             <h4>As a compositor, I aim to apply the knowledge gained from the Software Development Bootcamp to advance
                 into a Nuke TD role within the VFX industry.</h4>
-            <span style="font-size: smaller;">This entire page has been created using HTML, CSS, and JavaScript.</span>
-
+            <span>This entire page has been created using HTML, CSS, and JavaScript for the front-end. For the back-end, Node.js and Express are used, together with Github.</span>
+            <a href="CV_July_2024_v05.pdf" style="text-decoration: none;" class="worklink" id="resume"
+                target="_blank">Resume</a>
             <a href="https://vimeo.com/446701960" style="text-decoration: none;" class="worklink" id="demoreel"
-                target="_blank">Demoreel</a> <span style="font-size: smaller;">(password:nicha)</span>
+                target="_blank">Demoreel</a> <span style="font-size: smaller;">&nbsp;( password : nicha )</span>
         </div>
     </section>
 
@@ -62,12 +63,12 @@
             </ul>
         </div>
 
-        <div>
-            <img id="programmingtools" src="programmingtools.jpg" alt="tools" width="250">
+        <div id="programmingtools">
+            <img id="programmingtoolsimage" src="programmingtools.jpg" alt="tools" width="250">
         </div>
 
         <div class="biography" id="biography">
-            <h2 style="color: rgb(41, 122, 184); font-family: Raleway;">Biography</h2>
+            <h2 style="color: rgb(43, 130, 170); font-family: Raleway;">Biography</h2>
             <p>My name is <strong style="color: rgb(30, 25, 25);">Nicha Kumkeaw</strong>. I have been a software user
                 all my life, and now I'm eager to challeng myself by delving into the world of software
                 development, with the hope that this journey will open up new, exciting, and challenging opportunities
@@ -91,16 +92,74 @@
                 </p>
                 <p id="celebration">🎉 Congratulations! You got it right! 🎉</p>
             </div>
+        </div>
+    </section>
+    <br>
+    <section class="sectionthree">
+
+        <div class="workexperience" id="workexperience">
+            <h2 style="color: rgb(248, 93, 3); font-family: Raleway;">Work Experience</h2>
             <div>
-                <p><strong>I have been working as a compositor for over 10 years. Here are some of my highlighs and fun
-                        facts.</strong>
-                </p>
+                <p><strong>I have been working as a compositor for over 10 years. Here are some of my highlights and fun
+                        facts.
+                </p></strong>
                 <div id="careerhighlights">
                     <button id="careerbutton" type="button">Career hightlights</button>
                     <div id="careerdiv"></div>
                 </div>
             </div>
-        </div>
+
+            <div class="wecontainer">
+                <div class="wetitlesection" id="by-job-title">
+                    <h3>I have worked as......</h3>
+                    <button
+                        onclick="showMessage('I have been a compositor for more than 10 years and have 45 credits on IMDb. <br><br>I began my career as a compositor at Framestore in London before moving to Vancouver, Canada for a contract with MPC. <br><br>I currently reside in Vancouver and have worked as a compositor at a few different VFX companies.')">Compositor</button>
+                    <button
+                        onclick="showMessage('I worked as a mentor and teacher for a compositing program at Facet school of Visual Effects in Pachuca, Mexico.')">Mentor
+                        / Teacher</button>
+                    <button
+                        onclick="showMessage('I started my compositing career as the Head of Paint&Roto Department at Framestore in London, UK. <br><br>During that time I developed my skills in quality control and management.')">Head
+                        of Paint & Roto Department</button>
+                </div>
+
+                <div class="wecompanysection" id="by-company">
+                    <h3>I have gained my experience at the following companies</h3>
+                    <button
+                        onclick="showMessage('I worked at DD for about 6 years from March 2016 to January 2024 with a year long break to work in Montreal. <br><br>At DD, I completed many projects, including <ul style=\'list-style-type: none; padding-left: 0;\'><li>Beauty and the Beast</li><li>Avengers: Infinity War</li><li>Ant-man and the Wasp</li><li>Spiderman: Homecoming and No Way Home</li><li>Black Panther: Wakanda Forever</li><li>Power Rangers</li><li>The Fate of the Furious</li><li>Thor: Ragnarok</li><li>Black Widow</li><li>Blue Beetle</li><li>Black Adam</li><li>Independence Day</li><li>Loki</li></ul>')">Digital Domain</button>
+                    <button
+                        onclick="showMessage('I worked at MPC in Montreal for about 7 months. <br><br> I completed 3 projects: Aquaman, Dumbo, and Noelle.')">MPC</button>
+                    <button
+                        onclick="showMessage('I was at Image Engine, Vancouver for about 3 years.<br><br> I worked on several movies <ul style=\'list-style-type: none; padding-left: 0;\'><li>American Sniper</li><li>Lone Survivor</li><li>Now You See Me</li><li>Zero Dark Thirty</li><li>Elysium</li><li>Chappie</li><li>Straight Outta Compton</li>')">Image
+                        Engine</button>
+                    <button
+                        onclick="showMessage('This is where my compositing career began. Framestore in London was my first VFX company. I started as a runner, which was a fun experience, and then transitioned into paint&roto. eventually becoming the head of the department. <br><br>After that, I progressed to become a junior compositor working on numerous movies <ul style=\'list-style-type: none; padding-left: 0;\'><li>Harry Potter and the Deathly Hallows: Part 1</li><li>Avatar</li><li>Salt</li><li>Clash of the Titans</li><li>Prince of Persia</li><li>Where the Wild Things Are</li><li>The Tale of Despereaux</li> ')">Framestore</button>
+                    <button
+                        onclick="showMessage('Aardman Animations is a highly esteemed animation company in the UK, and I am honoured to have worked there. <br><br> My role involved compositing for a stop-motion animated film, focusing on CG background and stereoscorpic work for the movie')">Aardman
+                        Animations</button>
+                    <button
+                        onclick="showMessage('I had the opportunity to teach compositing in Mexico on two occasions, each lasting three months. Each clasee consisted of approximately 6-8 students. <br><br>I also assisted the students with their demoreels and job applications. Many of the students went on to work in prominent VFX companies both in Mexico and Canada')">Facet
+                        School of Visual Effects</button>
+                </div>
+
+                <div class="wecountrysection" id="by-country">
+                    <h3>Here are the cities where I have worked</h3>
+                    <button onclick="showMessage('I have been in Vancouver since 2011, I worked at Image Engine, MPC, and Digital Domain')">Vancouver</button>
+                    <button onclick="showMessage('In the fall of 2018, I worked at MPC in Montreal for a 7-month contract because I wanted to explore another part of Canada. Afterward, I moved back to Vancouver')">Montreal</button>
+                    <button onclick="showMessage('After my graduation, I started working at Framestore, London. I lived in London for about 10 years')">London</button>
+                    <button onclick="showMessage('I lived in Bristol for one year and worked at Aardman Animations between October 2010 to November 2011')">Bristol</button>
+                    <button onclick="showMessage('In the winter of 2013 and 2014, I went to Pachuca, Mexico to work for Facet School of VFX for their compisiting program')">Pachuca, Mexico</button>
+                </div>
+
+                <div id="wepopup" class="wepopup">
+                    <div class="wepopup-content">
+                        <p id="popup-message"></p>
+                        <span class="closebtn" onclick="closePopup()">close</span>
+                    </div>
+                </div>
+
+    </section>
+
+    <section class="sectionfour">
 
         <div class="codingfun" id="codingfun">
             <h3
@@ -134,16 +193,15 @@
             <button onclick="playgame('✂️')">Scissors✂️</button>
             <div id="result" style="font-size: large;"></div>
         </div>
-
-
     </section>
 
-    <footer>
+
+    <footer class="footer">
         <div>
- <a href="#topbutton"
-                style="text-decoration: none; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1em;">Back
+            <a href="#topbutton"
+                style="text-decoration: none; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1.2em;">Back
                 to top</a>
-                <p>&copy; 2024 Nicha Kumkeaw. All rights reserved.</p>
+            <p>&copy; 2024 Nicha Kumkeaw. All rights reserved.</p>
         </div>
     </footer>
 

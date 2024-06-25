@@ -125,7 +125,7 @@ let counter = 0;
         "I've worked in 3 countries and 5 cities: UK (London and Bristol), Canada (Vancouver and Montreal), and Mexico (Pachuca).",
         "While working on 'Beauty and the Beast', I had a chance to wear a dress made for Emma Watson because they needed someone to wear it to test the lighting.",
         "From the list of movies I worked on, the one I enjoyed watching the most is 'Now You See Me', and the one I enjoyed the least is 'The Huntsman: Winter's War'",
-        "The cuttest movie I worked on is Dumbo. I love the baby elephant!"
+        "The cutest movie I worked on is Dumbo. I love the baby elephant!"
       ];
       
       if (counter >= messages.length) {
@@ -145,6 +145,7 @@ let counter = 0;
 // 
 
 // Rock Paper Scisscors
+// 'ROCK✊', 'PAPER📄', 'SCISSORS✂️'
 
 let userHasChosen = false;
         
@@ -170,15 +171,16 @@ function startCountdown() {
                 }
 
             }, 8000); // Allow 5 seconds for the user to make a choice
-                 if (setTimeout(null, 5000)) {
-                    document.getElementById('result').innerText = `
-                      YOU = Time out! Computer wins!`
-                      return;
-    }
+    //              if (setTimeout(null, 5000)) {
+    //                 document.getElementById('result').innerText = `
+    //                   YOU = Time out! Computer wins!`
+    //                   return;
+    // }
         }
     }, 500);
    
 }
+
 
 document.getElementById('start-button').addEventListener('click', startCountdown);
 
@@ -188,11 +190,14 @@ function computerPlaygame() {
     return choices[randomChoice]
 }
 
-// 'ROCK✊', 'PAPER📄', 'SCISSORS✂️'
 
 function playgame(userChoice) {
     const computerChoice = computerPlaygame()
     determineWinner(userChoice, computerChoice)
+
+    setTimeout(() => {
+        clearResult();
+    }, 3000);
 
 }
 
@@ -225,23 +230,36 @@ document.getElementById('result').innerHTML = `
 }  
 }
 
+function clearResult() {
+    document.getElementById('result').innerHTML = '';
+}
+
+// work experience
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Function to display a message in the popup
+    const showMessage = (message) => {
+        const messageElement = document.getElementById('popup-message');
+        messageElement.innerHTML = message;
+        messageElement.style.color = 'purple';
+        messageElement.style.fontFamily = 'RALEWAY, sans-serif';
+
+        document.getElementById('wepopup').style.display = 'flex';
+    }
+
+    // Function to close the popup
+    const closePopup = () => {
+        document.getElementById('wepopup').style.display = 'none';
+    }
+
+    // Attach the closePopup function to the global scope so it can be accessed from the HTML
+    window.closePopup = closePopup;
+    window.showMessage = showMessage;
+});
 
 
 
 
 
-// feedback form
-
-//   function feedbackForm() {
-//     let x = document.forms["myForm"]["feedback"].value;
-//     if (x == "") {
-//         alert("Feedback must be filled out");
-//         return false;
-//     }
-    
-//     alert("Form submitted!")
-//     document.getElementById("myForm").reset()
-    
-//     return false
-// }
 
