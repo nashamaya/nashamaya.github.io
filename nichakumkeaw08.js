@@ -212,9 +212,9 @@ document.getElementById('result').innerHTML = `
 return
 } 
  else if (
-(userChoice === '✊' && computerChoice === 'scissors') ||
-(userChoice === '📄' && computerChoice === 'rock') ||
-(userChoice === '✂️' && computerChoice === 'paper')
+(userChoice === '✊' && computerChoice === '✂️') ||
+(userChoice === '📄' && computerChoice === '✊') ||
+(userChoice === '✂️' && computerChoice === '📄')
 ) {
 document.getElementById('result').innerHTML = `
 <p>YOU chose ${userChoice}</p>   
@@ -233,6 +233,8 @@ document.getElementById('result').innerHTML = `
 function clearResult() {
     document.getElementById('result').innerHTML = '';
 }
+
+
 
 // work experience
 
