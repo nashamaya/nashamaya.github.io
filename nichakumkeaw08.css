@@ -47,7 +47,7 @@ body {
     padding: 1em;
     width: 960px;
     margin: 0 auto;
-    background-image: linear-gradient(to bottom, rgb(249, 217, 199) 20%, rgb(182, 237, 249) 100%);
+    background-image: linear-gradient(to bottom, rgb(280, 196, 161) 30%, rgb(153, 234, 252) 100%);
 }
 
 /* Hello section with photo and resume button */
@@ -60,7 +60,11 @@ section.sectionone {
 .description {
 display: flex;
 flex-direction: column;
-
+font-size: 0.7em;
+width: 600px;
+height: 10px;
+position: relative;
+top: -320px;
 }
 
 .worklink {
@@ -78,25 +82,19 @@ div {
 .status {
     font-size: .8em;
     line-height: 0.5em;
-    /* position: relative; */
-    /* top: 60px; */
-    /* padding-top: 50px; */
 }
 
-
-.description {
-    font-size: 0.7em;
-    width: 600px;
-    height: 10px;
-    position: relative;
-    top: -320px;
-}
 
 .profileimage {
     background-color: rgb(255, 115, 0);
     width: 300px;
     border-radius: 15px;
-    /* margin-top: 50px; */
+}
+
+.badge {
+    position: relative;
+    top: -155px;
+    left: 350px;
 }
 
 #resume, #demoreel {
@@ -124,47 +122,6 @@ div {
     background-color: rgb(255, 106, 0);
 }
 
-.sectiontwo {
-    font-size: 0.55em;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.softwaredev {
-    border: 4px solid rgb(17, 167, 237);
-    border-radius: 10px;
-
-}
-
-#trainingheader h2, #trainingheader h4, #trainingheader h5 {
-    margin: 0; /* Remove default top and bottom margin */
-    /* margin-bottom: px; Add a small bottom margin between headings */
-}
-
-#programmingtools {
-    position: relative;
-    left: 100px;
-    top: 40px;
-    border: 5px solid rgb(47, 139, 90);
-    padding: 8px;
-}
-
-.biography {
-    border: 5px solid rgb(233, 134, 81);
-    border-radius: 10px;
-    flex: 1000px;
-}
-
-#celebration {
-    display: none;
-    font-size: 2em;
-    color: green;
-    text-align: center;
-    margin-top: 20px;
-}
-
-
 #demoreelbutton {
     border: 0;
     line-height: 2;
@@ -187,8 +144,248 @@ div {
 }
 
 
-.workyear {
-    color: rgb(75, 93, 255);
+/* Section two */
+
+.sectiontwo {
+    font-size: 0.65em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: relative;
+    /* top: 35px; */
+}
+
+.softwaredev {
+    border: 4px solid rgb(77, 168, 210);
+    border-radius: 10px;
+
+}
+
+#trainingheader h2,
+#trainingheader h4,
+#trainingheader h5 {
+    margin: 0;
+}
+
+#programmingtools {
+    margin-left: auto;
+    position: relative;
+    right: 10px;
+}
+
+#programmingtoolsimage {
+    border: 5px solid rgb(47, 139, 90);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.biography {
+    border: 5px solid rgb(250, 137, 76);
+    border-radius: 10px;
+    flex: 1000px;
+    font-size: 1.05em;
+}
+
+#celebration {
+    display: none;
+    font-size: 2em;
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Section three: work experience */
+
+.sectionthree {
+    font-size: 0.65em;
+    position: relative;
+    top: 30px;
+}
+
+.workexperience {
+    border: 5px solid rgb(180, 162, 218);
+    border-radius: 10px;
+}
+
+#careerhighlights {
+    display: flex;
+    align-items: center;
+    font-family: Raleway, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(26, 90, 96);
+
+}
+
+#careerbutton {
+    background-color: rgb(26, 163, 129);
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+}
+
+#careerbutton:hover {
+    background-color: rgb(253, 145, 72);
+    color: white;
+}
+
+#clickmultipletimes {
+    position: relative;
+    top: -30px;
+color: rgb(4, 28, 9);
+}
+
+.wetitlesection button, .wecompanysection button, .wecountrysection button {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px 0;
+    padding: 10px;
+    border: 3px solid rgb(202, 165, 245);
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.wecontainer button:hover {
+    background-color: #a83df0;
+    color: white;
+}
+
+.wetitlesection,
+.wecompanysection,
+.wecountrysection {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.85em;
+}
+
+
+.wepopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.wepopup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+
+.closebtn {
+    display: block;
+    margin-top: 20px;
+    color: #888;
+    cursor: pointer;
+}
+
+
+.sectionfour {
+    font-size: 0.65em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    position: relative;
+    top: 70px;
+}
+
+.codingfun {
+    border: 5px solid rgb(253, 189, 14);
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+.weathercontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #d5effb;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: medium;
+
+}
+
+
+#weathercity,
+#weatherlondon {
+    background-color: rgb(246, 207, 123);
+    color: rgb(58, 57, 57);
+    border-radius: 8px;
+}
+
+#localtime,
+#londonlocaltime {
+    background-color: rgb(178, 209, 234);
+    color: rgb(48, 47, 40);
+    border-radius: 8px;
+}
+
+#weathercondition,
+#weatherlondoncondition {
+    background-color: rgb(163, 210, 251);
+    font-size: 1.3em;
+    border-radius: 8px;
+}
+
+#weathericon,
+#weatherlondonicon {
+    background-color: rgb(76, 163, 250);
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+
+.game {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 5px solid rgb(227, 116, 212);
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+
+}
+
+#start-button {
+    display: block;
+    margin: 20px auto;
+}
+
+
+/* Section five: Education */
+
+.sectionfive {
+    font-size: 0.65em;
+    position: relative;
+    top: 110px;
+}
+
+.education {
+    border: 5px solid rgb(85, 186, 122);
+    border-radius: 10px;
+    flex: 1000px;
+
 }
 
 table {
@@ -213,103 +410,11 @@ td {
     font-size: .9em;
 }
 
-.js {
-    border: 5px solid rgb(116, 194, 230);
-    border-radius: 10px;
-    flex: 1000px;
-}
-
-
-#careerhighlights {
-    display: flex;
-    align-items: center;
-    font-family: Raleway, sans-serif;
-    font-size: large;
-    font-weight: bold;
-
-}
-
-#careerbutton {
-    background-color: rgb(240, 182, 90);
-    width: 150px;
-    /* height: 100px; */
-    margin: 5px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: x-large;
-}
-
-
-
-.codingfun {
-    border: 5px solid rgb(67, 183, 212);
-    border-radius: 10px;
-    width: 50%;
-
-}
-
-.weathercontainer {
-display: grid;
-grid-template-columns: 1fr 1fr;
-    background-color: #d5effb;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-size: medium;
-
-}
-
-
-#weathercity, #weatherlondon {
-    background-color: rgb(246, 207, 123);
-    color: rgb(58, 57, 57);
-    border-radius: 8px;
-}
-
-#localtime, #londonlocaltime {
-    background-color: rgb(178, 209, 234);
-    color: rgb(48, 47, 40);
-    border-radius: 8px;
-}
-
-#weathercondition, #weatherlondoncondition {
-    background-color: rgb(163, 210, 251);
-font-size: 1.3em;
-border-radius: 8px;
-}
-
-#weathericon, #weatherlondonicon {
-    background-color: rgb(76, 163, 250);
-    border-radius: 8px;
-}
-
-  h2 {
-    margin-top: 0;
-  }
-
-
-.game {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border: 5px solid rgb(143, 116, 227);
-    border-radius: 10px;
-    width: 40%;
+footer {
+    font-size: .5em;
     position: relative;
-    left: 540px;
-    top: -450px;
-    text-align: center;
-
+    top: 130px;
 }
-
-#start-button {
-    display: block;
-    margin: 20px auto;
-}
-
-
 
 @media screen and (max-width: 600px) {
 
@@ -317,8 +422,4 @@ border-radius: 8px;
         flex-direction: column;
         gap: 0px;
     } */
-}
-
-footer {
-    font-size: .5em;
 }
