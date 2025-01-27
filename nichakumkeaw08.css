@@ -41,11 +41,7 @@ body {
     padding: 1em;
     width: 960px;
     margin: 0 auto;
-<<<<<<< HEAD
     background-image: linear-gradient(to bottom, rgb(280, 196, 161) 30%, rgb(153, 234, 252) 100%);
-=======
-    background-image: linear-gradient(to bottom, rgb(249, 196, 161) 30%, rgb(153, 234, 252) 100%);
->>>>>>> 84c4c0c955b83dc184be88806e3bc1717e944e63
 }
 
 /* Hello section with photo and resume button */
@@ -56,7 +52,6 @@ section.sectionone {
 }
 
 .description {
-<<<<<<< HEAD
 display: flex;
 flex-direction: column;
 font-size: 0.7em;
@@ -64,11 +59,6 @@ width: 600px;
 height: 10px;
 position: relative;
 top: -320px;
-=======
-    display: flex;
-    flex-direction: column;
-
->>>>>>> 84c4c0c955b83dc184be88806e3bc1717e944e63
 }
 
 .worklink {
@@ -86,38 +76,19 @@ div {
 .status {
     font-size: .8em;
     line-height: 0.5em;
-<<<<<<< HEAD
 }
 
 
-=======
-    position: relative;
-    top: -20px;
-}
-
-
-.description {
-    font-size: 0.7em;
-    width: 600px;
-    height: 10px;
-    position: relative;
-    top: -340px;
-}
-
->>>>>>> 84c4c0c955b83dc184be88806e3bc1717e944e63
 .profileimage {
     background-color: rgb(255, 115, 0);
     width: 300px;
     border-radius: 15px;
-<<<<<<< HEAD
 }
 
 .badge {
     position: relative;
     top: -155px;
     left: 350px;
-=======
->>>>>>> 84c4c0c955b83dc184be88806e3bc1717e944e63
 }
 
 #resume,
@@ -144,10 +115,6 @@ div {
     background-color: rgb(255, 106, 0);
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 84c4c0c955b83dc184be88806e3bc1717e944e63
 #demoreelbutton {
     border: 0;
     line-height: 2;
@@ -406,7 +373,6 @@ h2 {
     border-radius: 10px;
     flex: 1000px;
 
-<<<<<<< HEAD
 /* Section two */
 
 .sectiontwo {
@@ -649,8 +615,6 @@ h2 {
     border-radius: 10px;
     flex: 1000px;
 
-=======
->>>>>>> 84c4c0c955b83dc184be88806e3bc1717e944e63
 }
 
 table {
@@ -675,28 +639,16 @@ td {
     font-size: .9em;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 84c4c0c955b83dc184be88806e3bc1717e944e63
 footer {
     font-size: .5em;
     position: relative;
     top: 130px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 84c4c0c955b83dc184be88806e3bc1717e944e63
 @media screen and (max-width: 600px) {
 
     /* #topbutton {
         flex-direction: column;
         gap: 0px;
     } */
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 84c4c0c955b83dc184be88806e3bc1717e944e63
